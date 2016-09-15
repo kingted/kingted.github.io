@@ -26,48 +26,31 @@
 <a id="stock prediction" class="anchor" href="#stock prediction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Stock Prediction,2016.8-now</h3>
 
 <p>股价预测主要利用了经济学中的均值回复理论，我设计了Kmeans + LR + KNN的模型。传统方法中利用MA的方法分上涨期，震荡期和下跌期，而我用Kmeans聚类则能更敏感和灵活的捕捉分期信息；针对每一类，分别训练一个LR分类器，预测是否会上涨；使用时，由于不知道股价的分布，所以先用KNN判定类别，再用该类的LR分类器分类。准确率从60%左右提升至71%。下图显示了利用历史数据回测的策略效果:</p>
-<table><tr>
     <td><img src=./img/fig_1.png border=0></td>
     <td><img src=./img/fig_2.png border=0></td>
     <td><img src=./img/fig_3.png border=0></td>
     <td><img src=./img/fig_4.png border=0></td>
-</tr></table>
 <h3>
 <a id="nc-paper" class="anchor" href="#nc-paper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>”Study of percolation properties in urban traffic network and rebuild with symbol-transfer-entropy model”，《Nature Communication》,2015.1-2016.8</h3>
 
 <p>论文”Study of percolation properties in urban traffic network and rebuild with symbol-transfer-entropy model”，《Nature Communication》，目前尚在投稿中。发现城市交通中存在类似统计物理中的渗流相变现象，并利用今年来在脑神经科学中出现的新方法——转移熵，组建因果网络，还原相变过程，并预测了交通拥堵的源发和继发关系；使用新浪微博数据作为人口数据验证了预测效果。</p>
 
 <p>第一章 城市拥堵中的相变，研究发现北京市5环内，在晚高峰时段会发生交通拥堵的相变，形成一个覆盖整个市区的大拥堵集团，在拥堵的演变过程中，平均速度，拥堵总规模，第一大和第二大拥堵集团有着明显的相关性:</p>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
+
     <td align=center><img src='./img/speed.jpg' ></td>
     <td align=center><img src=./img/scale.jpg ></td>
     <td align=center><img src=./img/real.jpg></td>
     <td align=center><img src=./img/realjam.jpg ></td>
-</tr>
-<tr>
-    <td align=center>晚高峰时段平均速度及速度变化</td>
-    <td align=center>拥堵总规模变化</td>
-    <td align=center>第一大及第二大拥堵集团变化</td>
-    <td align=center>拥堵集团变化</td>
-</tr>
-</table>
+
+
+
 
 <p>第二章 利用转移熵，构建因果网络，重现拥堵中的相变，并预测源发拥堵以及继发关系:</p>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
+
     <td align=center><img src='./img/ste.jpg' ></td>
     <td align=center><img src=./img/roc.jpg ></td>
     <td align=center><img src=./img/boxplot.jpg></td>
     <td align=center><img src=./img/stejam.jpg></td>
-</tr>
-<tr>
-    <td align=center>转移熵还原第一大和第二大集团变化</td>
-    <td align=center>不同预测方法roc检验</td>
-    <td align=center>预测拥堵时刻和真实拥堵时刻关系</td>
-    <td align=center>因果网络还原拥堵过程</td>
-</tr>
-</table>
 
 <p>第三章 复杂网络社区发现，使用BGLL算法。另外，利用新浪微博23:00-5:00数据，代替人口，验证上文预测的源发拥堵和人口之间的关系:</p>
     <img src='./img/stenet.jpg' >
@@ -77,24 +60,14 @@
 <a id="plos-paper" class="anchor" href="#plos-paper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>”Predictability of road traffic and congestion in urban areas”,《Plos One》,2013.10-2014.10</h3>
 
 <p>受《Science》"Limits of Predictability in Human Mobility"启发，在没有任何先验知识的情况下，研究不同变量下的城市交通可预测性：</p>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
+
     <td align=center><img src='./img/4thring.jpg' ></td>
     <td align=center><img src=./img/entropy.jpg ></td>
     <td align=center><img src=./img/mat.jpg></td>
     <td align=center><img src=./img/1-box.jpg ></td>
     <td align=center><img src=./img/1-else.jpg ></td>
     <td align=center><img src=./img/e-speed.jpg ></td>
-</tr>
-<tr>
-    <td align=center>交通速度变化的状态转移图</td>
-    <td align=center>速度变化的条件熵分布及可预测性分布</td>
-    <td align=center>不同速度划分及不同路段划分下可预测性的变化</td>
-    <td align=center>不同路段一周可观测性变化</td>
-    <td align=center>可预测性与速度之间的关系</td>
-    <td align=center>可预测性与速度关系的地图可视化</td>
-</tr>
-</table>
+
 
       <footer class="site-footer">
 
